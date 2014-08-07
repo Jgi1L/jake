@@ -52,6 +52,8 @@ nnoremap ^ <nop>
 imap jk <Esc>        
 inoremap <c-s> <Esc>:Update<CR>
 inoremap ()<space> ()<Esc>i
+inoremap ();<space> ();<Esc>hi
+inoremap ():<space> ();<Esc>hi
 inoremap {}<space> {}<Esc>i
 inoremap []<space> []<Esc>i
 inoremap /{ {}<Esc>i<CR><Esc>O<Tab> 
@@ -69,6 +71,6 @@ endif
 
 autocmd vimenter * NERDTree
 autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * if argc(== 0 && !exists("s:std_in") | NERDTree | endif)
+" autocmd VimEnter * if argc(== 0 && !exists("s:std_in") | NERDTree | endif)
 
 
